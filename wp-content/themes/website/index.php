@@ -52,11 +52,11 @@ if(isset($_POST['send'])){
 
    <div class="biography">
 
-      <p data-aos="fade-up">With over seven years of experience in managing teams comprising up to 64 members and a solid foundation in software engineering, I am a proficient leader passionate about developing user-friendly software through agile methodologies.<br><br> I stay current with the latest industry trends and possess exceptional problem-solving abilities that allow me to achieve high-quality results.
+      <p data-aos="fade-up">With more than seven years of experience leading teams of up to 64 members and a solid background in software engineering, I'm a hands-on leader who loves to create user-friendly software using agile methodologies. <br><br>
 
-      As a committed learner, I am always open to embracing new challenges, and my excellent communication skills enable me to be an effective team player. I strongly believe in making a meaningful impact and participating in projects that bring about positive change. I am devoted to delivering results and ensuring the success of every project I undertake.
+      I always keep up with the latest industry trends and use my problem-solving skills to get great results. As someone who's always learning, I'm open to new challenges, and my communication skills help me work well with others. I truly believe in making a positive impact and joining projects that make a difference. You can count on me to work hard, deliver results, and make sure every project I'm involved in succeeds.
       <br><br>
-      Being an enthusiastic software developer, I recognize the potential of technology to create a positive influence in the world. I am committed to giving back to society and engaging in projects that drive significant change.</p>
+      As an enthusiastic software developer, I see the huge potential technology has to make the world a better place. I'm committed to giving back to the community and getting involved in projects that drive real change.</p>
 
       <div class="bio">
          <h3 data-aos="zoom-in"> <span>name : </span> Klajdo Qasolli </h3>
