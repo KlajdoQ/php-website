@@ -20,73 +20,17 @@ if(isset($_POST['send'])){
 
 ?> 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Klajdo Qasolli </title>
-
-   <!-- font awesome cdn link  -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
-
-   <!-- aos css link  -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-
-   <!-- custom css file link  -->
-   <link rel="stylesheet" href="style.css">
-
-</head>
-<body>
-
 <?php
-
-if(isset($message)){
-   foreach($message as $message){
-      echo '
-      <div class="message" data-aos="zoom-out">
-         <span>'.$message.'</span>
-         <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
-      </div>
-      ';
-   }
-}
-
+   get_header();
 ?>
 
-<!-- header section starts  -->
-
-<header class="header">
-
-   <div id="menu-btn" class="fas fa-bars"></div>
-
-   <a href="#home" class="logo">Portfolio</a>
-
-   <nav class="navbar">
-      <a href="#home" class="active">home</a>
-      <a href="#about">about</a>
-      <a href="#services">services</a>
-      <a href="#portfolio">portfolio</a>
-      <a href="#contact">contact</a>
-   </nav>
-
-   <div class="follow">
-      <a href="https://www.linkedin.com/in/klajdo-qasolli/" class="fab fa-linkedin"></a>
-      <a href="https://github.com/KlajdoQ" class="fab fa-github"></a>
-      <a href="https://github.com/KlajdoQ/php-website" class="fas fa-globe"></a>
-   </div>
-
-</header>
-
-<!-- header section ends -->
 
 <!-- home section starts  -->
 
 <section class="home" id="home">
 
    <div class="image" data-aos="fade-right">
-      <img src="images/user-img2.jpg" alt="">
+   <img src="<?php echo get_template_directory_uri(); ?>/images/user-img2.jpg" alt="">
    </div>
 
    <div class="content">
@@ -110,9 +54,9 @@ if(isset($message)){
 
       <p data-aos="fade-up">With over seven years of experience in managing teams comprising up to 64 members and a solid foundation in software engineering, I am a proficient leader passionate about developing user-friendly software through agile methodologies.<br><br> I stay current with the latest industry trends and possess exceptional problem-solving abilities that allow me to achieve high-quality results.
 
-As a committed learner, I am always open to embracing new challenges, and my excellent communication skills enable me to be an effective team player. I strongly believe in making a meaningful impact and participating in projects that bring about positive change. I am devoted to delivering results and ensuring the success of every project I undertake.
-<br><br>
-Being an enthusiastic software developer, I recognize the potential of technology to create a positive influence in the world. I am committed to giving back to society and engaging in projects that drive significant change.</p>
+      As a committed learner, I am always open to embracing new challenges, and my excellent communication skills enable me to be an effective team player. I strongly believe in making a meaningful impact and participating in projects that bring about positive change. I am devoted to delivering results and ensuring the success of every project I undertake.
+      <br><br>
+      Being an enthusiastic software developer, I recognize the potential of technology to create a positive influence in the world. I am committed to giving back to society and engaging in projects that drive significant change.</p>
 
       <div class="bio">
          <h3 data-aos="zoom-in"> <span>name : </span> Klajdo Qasolli </h3>
@@ -131,7 +75,7 @@ Being an enthusiastic software developer, I recognize the potential of technolog
       <h1 class="heading"> <span>skills</span> </h1>
 
       <div class="progress">
-         <div>
+         <div class='skills-bars'>
             <div class="bar" data-aos="fade-left"> <h3><span>JavaScript</span>  </div>
             <div class="bar" data-aos="fade-right"> <h3><span>PHP</span>  </div>
             <div class="bar" data-aos="fade-left"> <h3><span>Wordpress</span>  </div>
@@ -139,7 +83,7 @@ Being an enthusiastic software developer, I recognize the potential of technolog
             <div class="bar" data-aos="fade-left"> <h3><span>HTML</span>  </div>
             <div class="bar" data-aos="fade-right"> <h3><span>CSS</span>  </div> 
          </div>
-         <div>
+         <div class='skills-bars'>
             <div class="bar" data-aos="fade-left"> <h3><span>Ruby on Rails</span>  </div>
             <div class="bar" data-aos="fade-right"> <h3><span>PostgreSQL</span> </div>
             <div class="bar" data-aos="fade-left"> <h3><span>AWS</span>  </div>
@@ -261,21 +205,24 @@ Being an enthusiastic software developer, I recognize the potential of technolog
    <div class="box-container">
 
       <div class="box" data-aos="zoom-in">
-         <img src="images/petsnap.png" alt="" class='project-img'>
+         <img src="<?php echo get_template_directory_uri(); ?>/images/petsnap.png" alt="" class='project-img'>
+
          <h3>PetSnap</h3>
          <a href="https://github.com/KlajdoQ/petsnap" target="_blank"><button class="github-git1" >Github & README </button></a>
 
       </div>
 
       <div class="box" data-aos="zoom-in">
-         <img src="images/localsearch.png" alt="" class='project-img'>
+         <img src="<?php echo get_template_directory_uri(); ?>/images/localsearch.png" alt="" class='project-img'>
+
          <h3>LocalSearch</h3>
          <a href="https://github.com/KlajdoQ/LocalSearch" target="_blank"><button class="github-git1" >Github & README  </button></a>
 
       </div>
 
       <div class="box" data-aos="zoom-in">
-         <img src="images/bitcoin-webscraper.png" alt="" class='project-img'>
+         <img src="<?php echo get_template_directory_uri(); ?>/images/bitcoin-webscraper.png" alt="" class='project-img'>
+
          <h3>Bitcoin Webscraper</h3>
          <a href="https://github.com/KlajdoQ/bitcoin-webscraper" target="_blank"><button class="github-git1" >Github & README  </button></a>
       </div>
@@ -307,33 +254,6 @@ Being an enthusiastic software developer, I recognize the potential of technolog
 
 <!-- contact section ends -->
 
-<div class="credit"> &copy; copyright @  <?php echo date('Y'); ?> by <span>Klajdo Qasolli </span> </div>
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- custom js file link  -->
-<script src="script.js"></script>
-
-<!-- aos js link  -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-
-<script>
-
-   AOS.init({
-      duration:800,
-      delay:300
-   });
-
-</script>
-   
-</body>
-</html>
+<?php
+   get_footer();
+?>
