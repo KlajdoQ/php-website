@@ -1,6 +1,7 @@
   <?php
 
 if(isset($_POST['send'])){
+   $conn = mysqli_connect('localhost','root','','contact_db') or die('connection failed');
 
    $name = mysqli_real_escape_string($conn, $_POST['name']);
    $email = mysqli_real_escape_string($conn, $_POST['email']);
