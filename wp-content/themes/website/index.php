@@ -74,7 +74,7 @@ if(isset($message)){
    <div class="follow">
       <a href="https://www.linkedin.com/in/klajdo-qasolli/" class="fab fa-linkedin"></a>
       <a href="https://github.com/KlajdoQ" class="fab fa-github"></a>
-      
+      <a href="https://github.com/KlajdoQ/php-website" class="fas fa-globe"></a>
    </div>
 
 </header>
@@ -131,19 +131,22 @@ Being an enthusiastic software developer, I recognize the potential of technolog
       <h1 class="heading"> <span>skills</span> </h1>
 
       <div class="progress">
-         <div class="bar" data-aos="fade-left"> <h3><span>HTML</span>  </div>
-         <div class="bar" data-aos="fade-right"> <h3><span>CSS</span>  </div>
-         <div class="bar" data-aos="fade-left"> <h3><span>JavaScript</span>  </div>
-         <div class="bar" data-aos="fade-right"> <h3><span>PHP</span>  </div>
-         <div class="bar" data-aos="fade-left"> <h3><span>Wordpress</span>  </div>
-         <div class="bar" data-aos="fade-right"> <h3><span>React</span>  </div>
-         <div class="bar" data-aos="fade-left"> <h3><span>Ruby on Rails</span>  </div>
-         <div class="bar" data-aos="fade-right"> <h3><span>SEO</span>  </div>
-         <div class="bar" data-aos="fade-left"> <h3><span>PostgreSQL</span> </div>
-         <div class="bar" data-aos="fade-right"> <h3><span>Render</span>  </div>
-         <div class="bar" data-aos="fade-left"> <h3><span>Figma</span>  </div>
-         <div class="bar" data-aos="fade-right"> <h3><span>Trello</span>  </div> 
-         <div class="bar" data-aos="fade-left"> <h3><span>AWS</span>  </div>
+         <div>
+            <div class="bar" data-aos="fade-left"> <h3><span>JavaScript</span>  </div>
+            <div class="bar" data-aos="fade-right"> <h3><span>PHP</span>  </div>
+            <div class="bar" data-aos="fade-left"> <h3><span>Wordpress</span>  </div>
+            <div class="bar" data-aos="fade-right"> <h3><span>React</span>  </div>
+            <div class="bar" data-aos="fade-left"> <h3><span>HTML</span>  </div>
+            <div class="bar" data-aos="fade-right"> <h3><span>CSS</span>  </div> 
+         </div>
+         <div>
+            <div class="bar" data-aos="fade-left"> <h3><span>Ruby on Rails</span>  </div>
+            <div class="bar" data-aos="fade-right"> <h3><span>PostgreSQL</span> </div>
+            <div class="bar" data-aos="fade-left"> <h3><span>AWS</span>  </div>
+            <div class="bar" data-aos="fade-right"> <h3><span>Figma</span>  </div>
+            <div class="bar" data-aos="fade-left"> <h3><span>Trello</span>  </div> 
+            <div class="bar" data-aos="fade-right"> <h3><span>Render</span>  </div>
+         </div>
       </div>
 
    </div>
